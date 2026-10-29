@@ -17,7 +17,30 @@ class MainApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.blueAccent,
         ),
-        body: Center(child: Text('Bienvenue dans cet atelier!')),
+        body: Container(
+          alignment: Alignment.topCenter,
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              Text(
+                'Bienvenue KKKARIM!',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepPurple,
+                ),
+              ),
+              SizedBox(height: 20),
+              Image.network('https://picsum.photos/id/237/200', width: 200),
+              SizedBox(height: 20),
+              Text(
+                'Decouvrez comment construire une interface simple et elegantes.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, color: Colors.teal),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
